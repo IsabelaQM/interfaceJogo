@@ -17,13 +17,7 @@ window.addEventListener("load", function () {
       usuarios = localStorage.getItem("usuarios");
       if (!usuarios) {
         alertWifi(
-          `Usuário inexistente. Tente novamente!`,
-          false,
-          0,
-          "",
-          30,
-          ""
-        );
+          `Ainda não há nenhum usuário cadastrado!`,false, 0, "",30,"");
       } else {
         var usuarios = JSON.parse(usuarios);
         var achou = false;
